@@ -218,7 +218,9 @@ body {
   color: white;
   text-decoration: none;
 }
-
+.table-container {
+  overflow-x: auto !important; /* Enables horizontal scrolling on smaller screens */
+}
 .bg-grey{
   background: darkslategrey !important;
 }
