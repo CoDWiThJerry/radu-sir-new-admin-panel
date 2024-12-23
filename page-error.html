@@ -13,7 +13,7 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 5, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Error Page - Vali Admin</title>
+    <title>Data Table - Vali Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +24,7 @@
   </head>
   <body class="app sidebar-mini">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html"><img src="Share Save.png" style="width: 50px;border-radius: 50%;padding-bottom: 5px;"></a>
+    <header class="app-header"><a class="app-header__logo" href="index.html"><img src="ld-logo.png" style="width: 50px;border-radius: 50%;padding-bottom: 5px;"></a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
@@ -42,7 +42,7 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="Share Save.png" alt="User Image">
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="ld-logo.png" alt="User Image">
         <div>
           <p class="app-sidebar__user-name">Radu </p>
           <p class="app-sidebar__user-designation">Admin panel</p>
@@ -55,7 +55,7 @@
         <li><a class="treeview-item" href="page-error.html"><i class="bi bi-person-fill fs-3 me-1"></i><span class="app-menu__label">User list</span></a></li>
         <li><a class="treeview-item" href="blank-page.html"><i class="bi bi-pencil-fill fs-4 me-2"></i><span class="app-menu__label"> Edit city</span></a></li>
        
-        <li><a class="treeview-item" href="index.html"><i class="bi bi-person-circle me-2 fs-4"></i><span class="app-menu__label"> Login Page</span></a></li>
+
         <li><a class="treeview-item" href="page-lockscreen.html"><i class="app-menu__icon bi bi-file-earmark fs-4 me-1"></i><span class="app-menu__label">Change password</span></a></li>
         <li><a class="treeview-item" href="page-user.html"><i class="bi bi-box-arrow-right me-2 fs-3"></i><span class="app-menu__label">Log Out</span></a></li>
       </ul>
@@ -66,39 +66,186 @@
           <h1><i class="bi bi-person-fill fs-3 me-1"></i> User list</h1>
           <p>Start a beautiful journey here </p>
         </div>
-    
+      
       </div>
-      <div class="page-error tile">
-        <div class="container mt-5">
-          <h2 class="text-center mb-4"> User List</h2>
-      
-          <div class="card">
-            <div class="card-header">User List</div>
-            <div class="card-body table-container">
-              <!-- User List Table -->
-              <table class="table table-bordered table-hover table-responsive">
-                <thead class="table-light">
-                  <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tile">
+            <div class="tile-body">
+              <div class="table-responsive">
+                  <table class="table table-hover table-bordered" id="sampleTable">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>+1-234-567-8901</td>
+                      
+                    </tr>
+                      <tr>
+                        <td>2</td>
+            <td>Jane Smith</td>
+            <td>janesmith@example.com</td>
+            <td>+1-345-678-9012</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>3</td>
+            <td>Mike Johnson</td>
+            <td>mikejohnson@example.com</td>
+            <td>+1-456-789-0123</td>
+                  
                   </tr>
-                </thead>
-                <tbody id="userTableBody">
-                  <!-- User data will be populated by JavaScript -->
-                </tbody>
-              </table>
+                  <tr>
+                    <td>4</td>
+                    <td>Emily Davis</td>
+                    <td>emilydavis@example.com</td>
+                    <td>+1-567-890-1234</td>
+                  
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Oliver Smith</td>
+                  <td>oliver.smith@example.com</td>
+                  <td>+1-123-456-7890</td>
+                 
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Sophia Brown</td>
+                <td>sophia.brown@example.com</td>
+                <td>+1-223-456-7891</td>
+               
+                
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>James Wilson</td>
+              <td>james.wilson@example.com</td>
+              <td>+1-323-456-7892</td>
+             
+              
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Isabella Garcia</td>
+            <td>isabella.garcia@example.com</td>
+            <td>+1-423-456-7893</td>
+           
+            
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Emily Taylor</td>
+          <td>emily.taylor@example.com</td>
+          <td>+1-623-456-7895</td>
+          
+          
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Alexander Anderson</td>
+        <td>alexander.anderson@example.com</td>
+        <td>+1-723-456-7896</td>
+       
+        
+    </tr>
+
+
+
+
+    <tr>
+      <td>11</td>
+      <td>Mia Thomas</td>
+      <td>mia.thomas@example.com</td>
+      <td>+1-823-456-7897</td>
+         
+          
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Ethan Lee</td>
+            <td>ethan.lee@example.com</td>
+            <td>+1-923-456-7898</td>
       
-              <!-- Pagination -->
-              <nav>
-                <ul class="pagination justify-content-center" id="pagination">
-                  <!-- Pagination buttons will be generated dynamically -->
-                </ul>
-              </nav>
-            </div>
+      
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Ava Walker</td>
+    <td>ava.walker@example.com</td>
+    <td>+1-102-456-7899</td>
+   
+    
+</tr>
+<tr>
+  <td>14</td>
+  <td>William Hall</td>
+  <td>william.hall@example.com</td>
+  <td>+1-112-456-7890</td>
+ 
+  
+</tr>
+<tr>
+  <td>15</td>
+  <td>Charlotte Adams</td>
+  <td>charlotte.adams@example.com</td>
+  <td>+1-122-456-7891</td>
+
+
+</tr>
+<tr>
+  <td>16</td>
+  <td>Benjamin Nelson</td>
+  <td>benjamin.nelson@example.com</td>
+  <td>+1-132-456-7892</td>
+
+
+</tr>
+<tr>
+  <td>17</td>
+  <td>Amelia Carter</td>
+  <td>amelia.carter@example.com</td>
+  <td>+1-142-456-7893</td>
+
+
+</tr>
+<tr>
+  <td>18</td>
+  <td>Lucas Mitchell</td>
+            <td>lucas.mitchell@example.com</td>
+            <td>+1-152-456-7894</td>
+
+
+</tr>
+<tr>
+  <td>19</td>
+  <td>Ella Perez</td>
+  <td>ella.perez@example.com</td>
+  <td>+1-162-456-7895</td>
+
+
+</tr>
+<tr>
+<td>20</td>
+<td>Henry Roberts</td>
+<td>henry.roberts@example.com</td>
+<td>+1-172-456-7896</td>
+</tr>
+        
+    
+            </tbody>
+             </table>
+     
           </div>
-        </div>
         </div>
       </div>
     </main>
@@ -107,6 +254,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <!-- Page specific javascripts-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css">
+    <!-- Data table plugin-->
+    <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript">$('#sampleTable').DataTable();</script>
     <!-- Google analytics script-->
     <script type="text/javascript">
       if(document.location.hostname == 'pratikborsadiya.in') {
@@ -121,87 +273,6 @@
 
 
 
-    // User data: Array of 20 users
-    const users = Array.from({ length: 20 }, (_, i) => ({
-      id: i + 1,
-      name: `User ${i + 1}`,
-      email: `user${i + 1}@example.com`,
-      phone: `+1 234 567 89${i}`
-    }));
-
-    const rowsPerPage = 8; // Number of rows per page
-    let currentPage = 1; // Start on the first page
-
-    // Render the table for the current page
-    function renderTable(page) {
-      const start = (page - 1) * rowsPerPage;
-      const end = start + rowsPerPage;
-      const tableBody = document.getElementById('userTableBody');
-
-      // Clear existing table rows
-      tableBody.innerHTML = '';
-
-      // Add rows for the current page
-      users.slice(start, end).forEach(user => {
-        const row = `
-          <tr>
-            <td>${user.id}</td>
-            <td>${user.name}</td>
-            <td>${user.email}</td>
-            <td>${user.phone}</td>
-          </tr>
-        `;
-        tableBody.insertAdjacentHTML('beforeend', row);
-      });
-    }
-
-    // Render pagination buttons
-    function renderPagination() {
-      const totalPages = Math.ceil(users.length / rowsPerPage);
-      const pagination = document.getElementById('pagination');
-
-      // Clear existing pagination
-      pagination.innerHTML = '';
-
-      // Add previous button
-      pagination.insertAdjacentHTML(
-        'beforeend',
-        `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
-          <a class="page-link" href="#" onclick="changePage(${currentPage - 1})">Previous</a>
-        </li>`
-      );
-
-      // Add page numbers
-      for (let i = 1; i <= totalPages; i++) {
-        pagination.insertAdjacentHTML(
-          'beforeend',
-          `<li class="page-item ${currentPage === i ? 'active' : ''}">
-            <a class="page-link" href="#" onclick="changePage(${i})">${i}</a>
-          </li>`
-        );
-      }
-
-      // Add next button
-      pagination.insertAdjacentHTML(
-        'beforeend',
-        `<li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
-          <a class="page-link" href="#" onclick="changePage(${currentPage + 1})">Next</a>
-        </li>`
-      );
-    }
-
-    // Change the current page and re-render the table and pagination
-    function changePage(page) {
-      const totalPages = Math.ceil(users.length / rowsPerPage);
-      if (page < 1 || page > totalPages) return; // Prevent invalid page numbers
-      currentPage = page;
-      renderTable(currentPage);
-      renderPagination();
-    }
-
-    // Initial render
-    renderTable(currentPage);
-    renderPagination();
     </script>
   </body>
 </html>

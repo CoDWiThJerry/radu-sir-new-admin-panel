@@ -187,6 +187,13 @@
   --bs-form-invalid-border-color: #ea868f;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family:"Poppins", serif !important;
+  font-weight: 600 !important;
+}
+
 *,
 *::before,
 *::after {
@@ -233,6 +240,48 @@ body {
 #background-color5{
   background: darkslategrey !important;
 }
+.card-title{
+ 
+  font-size: 1.3rem;
+  font-family: "Poppins", serif !important;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.image-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#00695C;
+  border-radius: 4px;
+  border-bottom: 10px solid darkslategrey !important;
+ /* Full viewport height for vertical centering */
+}
+label.form-label{
+  font-size: .9rem !important;
+  color: #00695C !important;
+  font-family: "Poppins", serif !important;
+  font-weight: 100;
+  font-style: normal;
+  font-weight: 400 !important;
+}
+label.form-control{
+  font-size: .9rem !important;
+  color: #00695C !important;
+  font-family: "Poppins", serif !important;
+  font-weight: 100;
+  font-style: normal;
+  font-weight: 400 !important;
+}
+
+.img {
+  max-width:50px;
+  border-radius: 50%; /* Ensure it scales down if needed */
+  height: auto; /* Maintain aspect ratio */
+
+}
 
 .treeview-item {
 
@@ -242,7 +291,13 @@ body {
   height: 50px !important;
 
 }
+.row{
+  width: 100%;
+  justify-content: space-evenly;
+}
 .widget-small{
+  
+
   background: white !important;
   color: black !important;
 }
