@@ -97,7 +97,7 @@
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Page specific javascripts-->
     <!-- Google analytics script-->
     <script type="text/javascript">
@@ -112,24 +112,41 @@
 
 
       function changePassword() {
-            const currentPassword = document.getElementById('current-password').value.trim();
-            const newPassword = document.getElementById('new-password').value.trim();
-            const confirmPassword = document.getElementById('confirm-password').value.trim();
+    const currentPassword = document.getElementById('current-password').value.trim();
+    const newPassword = document.getElementById('new-password').value.trim();
+    const confirmPassword = document.getElementById('confirm-password').value.trim();
 
-            if (!currentPassword || !newPassword || !confirmPassword) {
-                alert('All fields are required.');
-                return;
-            }
+    // Validation: Check for empty fields
+    if (!currentPassword || !newPassword || !confirmPassword) {
+        swal({
+            title: "Error",
+            text: "All fields are required.",
+            icon: "warning",
+        });
+        return;
+    }
 
-            if (newPassword !== confirmPassword) {
-                alert('New password and confirmation do not match.');
-                return;
-            }
+    // Validation: Check if new password matches confirmation
+    if (newPassword !== confirmPassword) {
+        swal({
+            title: "Mismatch",
+            text: "New password and confirmation do not match.",
+            icon: "error",
+        });
+        return;
+    }
 
-            // Implement password change logic here (e.g., API call)
+    // Simulate password change logic (e.g., API call)
+    swal({
+        title: "Success",
+        text: "Your password has been changed successfully.",
+        icon: "success",
+    }).then(() => {
+        // Redirect to the login page after success
+        window.location.href = "index.html";
+    });
+}
 
-            window.location.href = "index.html";
-        }
     </script>
   </body>
 </html>
