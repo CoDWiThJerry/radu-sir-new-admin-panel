@@ -221,6 +221,11 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.btn-sm {
+  display: block !important; /* Makes margin auto work */
+  margin: auto !important;
+}
+
 .swal-modal {
   background-color:white;
   
@@ -327,6 +332,14 @@ label.form-control{
 .widget-small.warning.coloured-icon .icon {
   background-color: darkolivegreen !important;
   color: #fff;
+}
+
+.col-sm-12 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 hr {
