@@ -13,7 +13,7 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 5, SASS and PUG.js. It's fully customizable and modular.">
-    <title>User list-Radu admin panel</title>
+    <title>Address list-Radu admin panel</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,7 @@
         <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Open Profile Menu"><i class="bi bi-person fs-4"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
       
-            <li><a class="dropdown-item" href="page-user.html"><i class="bi bi-box-arrow-right me-2 fs-5"></i> Logout</a></li>
+            <li><a class="dropdown-item" href="log-out.html"><i class="bi bi-box-arrow-right me-2 fs-5"></i> Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -51,21 +51,21 @@
       </div>
       <ul class="app-menu">
         <li><a class="treeview-item" href="dashboard.html"><i class="bi bi-window-stack  fs-3 me-2"></i><span class="app-menu__label">Dashboard</span></a></li>
-        <li><a class="treeview-item" href="table-basic.html"><i class="bi bi-building-fill-add fs-4 me-2"></i><span class="app-menu__label"> City list</span></a></li>
-        <li><a class="treeview-item" href="table-data-table.html"><i class="bi bi-house-add-fill me-2 fs-4"></i><span class="app-menu__label"> Address list</span></a></li>
-        <li><a class="treeview-item" href="page-error.html"><i class="bi bi-person-fill fs-3 me-1"></i><span class="app-menu__label">User list</span></a></li>
-        <li><a class="treeview-item" href="blank-page.html"><i class="bi bi-pencil-fill fs-4 me-2"></i><span class="app-menu__label"> Edit city</span></a></li>
+        <li><a class="treeview-item" href="city-list.html"><i class="bi bi-building-fill-add fs-4 me-2"></i><span class="app-menu__label"> City list</span></a></li>
+        <li><a class="treeview-item" href="Address-list.html"><i class="bi bi-house-add-fill me-2 fs-4"></i><span class="app-menu__label"> Address list</span></a></li>
+        <li><a class="treeview-item" href="user-list.html"><i class="bi bi-person-fill fs-3 me-1"></i><span class="app-menu__label">User list</span></a></li>
+        <li><a class="treeview-item" href="edit-city.html"><i class="bi bi-pencil-fill fs-4 me-2"></i><span class="app-menu__label"> Edit city</span></a></li>
        
 
-        <li><a class="treeview-item" href="page-lockscreen.html"><i class="app-menu__icon bi bi-file-earmark fs-4 me-1"></i><span class="app-menu__label">Change password</span></a></li>
-        <li><a class="treeview-item" href="page-user.html"><i class="bi bi-box-arrow-right me-2 fs-3"></i><span class="app-menu__label">Log Out</span></a></li>
+        <li><a class="treeview-item" href="change-password.html"><i class="app-menu__icon bi bi-file-earmark fs-4 me-1"></i><span class="app-menu__label">Change password</span></a></li>
+        <li><a class="treeview-item" href="log-out.html"><i class="bi bi-box-arrow-right me-2 fs-3"></i><span class="app-menu__label">Log Out</span></a></li>
       </ul>
     </aside>
     <main class="app-content">
       <div class="app-title">
         <div>
-          <h1><i class="bi bi-person-fill fs-3 me-1"></i> User list</h1>
-          <p>Start a beautiful journey here </p>
+          <h1><i class="bi bi-house-add-fill me-2 fs-4"></i> Address list</h1>
+         
         </div>
       
       </div>
@@ -77,87 +77,88 @@
                   <table class="table table-hover table-bordered" id="sampleTable">
                     <thead>
                       <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone Number</th>
+                        <th scope="col">S.no</th>
+                        <th scope="col">Postal Code</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Street</th>
+                        <th scope="col">Address</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>1</td>
-                        <td>John Doe</td>
-                        <td>johndoe@example.com</td>
-                        <td>+1-234-567-8901</td>
-                      
-                    </tr>
+                            <td>110001</td>
+                            <td>New Delhi</td>
+                            <td>Connaught Place</td>
+                            <td>Connaught Place, New Delhi, 110001</td>
+                      </tr>
                       <tr>
                         <td>2</td>
-            <td>Jane Smith</td>
-            <td>janesmith@example.com</td>
-            <td>+1-345-678-9012</td>
-                      
+                        <td>560001</td>
+                        <td>Mumbai</td>
+                        <td>MG Road</td>
+                        <td>Colaba, Mumbai, 400001</td>
                     </tr>
                     <tr>
                       <td>3</td>
-            <td>Mike Johnson</td>
-            <td>mikejohnson@example.com</td>
-            <td>+1-456-789-0123</td>
-                  
+                      <td>600001</td>
+                      <td>Bangalore</td>
+                      <td>MG Road</td>
+                      <td>MG Road, Bangalore, 560001</td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td>Emily Davis</td>
-                    <td>emilydavis@example.com</td>
-                    <td>+1-567-890-1234</td>
-                  
+                    <td>600002</td>
+                    <td>Chennai</td>
+                    <td>Colaba</td>
+                    <td>Anna Salai, Chennai, 600001</td>
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>Oliver Smith</td>
-                  <td>oliver.smith@example.com</td>
-                  <td>+1-123-456-7890</td>
-                 
+                  <td>Kolkata</td>
+                  <td>Anna Salai</td>
+                  <td>$87,000</td>
+                  <td>Park Street, Kolkata, 700001</td>
               </tr>
               <tr>
                 <td>6</td>
-                <td>Sophia Brown</td>
-                <td>sophia.brown@example.com</td>
-                <td>+1-223-456-7891</td>
+                <td>600004</td>
+                <td>Bhopal</td>
+                <td>Park Street</td>
                
-                
+                <td>Park Street, Kolkata, 700001</td>
             </tr>
             <tr>
               <td>7</td>
-              <td>James Wilson</td>
-              <td>james.wilson@example.com</td>
-              <td>+1-323-456-7892</td>
+              <td>600005</td>
+              <td>Indore</td>
+              <td>Light Street</td>
              
-              
+              <td>Park Street, Kolkata, 700001</td>
           </tr>
           <tr>
             <td>8</td>
-            <td>Isabella Garcia</td>
-            <td>isabella.garcia@example.com</td>
-            <td>+1-423-456-7893</td>
+            <td>600006</td>
+            <td>Sehore</td>
+            <td>Square Street</td>
            
-            
+            <td>Park Street, Kolkata, 700001</td>
         </tr>
         <tr>
           <td>9</td>
-          <td>Emily Taylor</td>
-          <td>emily.taylor@example.com</td>
-          <td>+1-623-456-7895</td>
+          <td>600007</td>
+          <td>Delhi</td>
+          <td>Connaught Place</td>
           
-          
+          <td>Park Street, Kolkata, 700001</td>
       </tr>
       <tr>
         <td>10</td>
-        <td>Alexander Anderson</td>
-        <td>alexander.anderson@example.com</td>
-        <td>+1-723-456-7896</td>
+        <td>600008</td>
+        <td>Surat</td>
+        <td>Chopati</td>
        
-        
+        <td>Park Street, Kolkata, 700001</td>
     </tr>
 
 
@@ -165,81 +166,82 @@
 
     <tr>
       <td>11</td>
-      <td>Mia Thomas</td>
-      <td>mia.thomas@example.com</td>
-      <td>+1-823-456-7897</td>
+      <td>500005</td>
+          <td>Gwalior</td>
+          <td>Raavi</td>
          
-          
+          <td>Park Street, Kolkata, 700001</td>
     </tr>
     <tr>
       <td>12</td>
-      <td>Ethan Lee</td>
-            <td>ethan.lee@example.com</td>
-            <td>+1-923-456-7898</td>
+      <td>500006</td>
+      <td>Jhasi</td>
+      <td>balouda</td>
       
-      
+      <td>Park Street, Kolkata, 700001</td>
   </tr>
   <tr>
     <td>13</td>
-    <td>Ava Walker</td>
-    <td>ava.walker@example.com</td>
-    <td>+1-102-456-7899</td>
+    <td>50008</td>
+    <td>Maihar</td>
+    <td>Connaught Place</td>
    
-    
+    <td>Park Street, Kolkata, 700001</td>
 </tr>
 <tr>
   <td>14</td>
-  <td>William Hall</td>
-  <td>william.hall@example.com</td>
-  <td>+1-112-456-7890</td>
+  <td>700005</td>
+  <td>Rewa</td>
+  <td>Park street</td>
  
-  
+  <td>Park Street, Kolkata, 700001</td>
 </tr>
 <tr>
   <td>15</td>
-  <td>Charlotte Adams</td>
-  <td>charlotte.adams@example.com</td>
-  <td>+1-122-456-7891</td>
+<td>700001</td>
+<td>Satna</td>
+<td>Park street</td>
 
-
+<td>Park Street, Kolkata, 700001</td>
 </tr>
 <tr>
   <td>16</td>
-  <td>Benjamin Nelson</td>
-  <td>benjamin.nelson@example.com</td>
-  <td>+1-132-456-7892</td>
+<td>700010</td>
+<td>Rampur</td>
+<td>Park street</td>
 
-
+<td>Park Street, Kolkata, 700001</td>
 </tr>
 <tr>
   <td>17</td>
-  <td>Amelia Carter</td>
-  <td>amelia.carter@example.com</td>
-  <td>+1-142-456-7893</td>
+<td>Badi bareli</td>
+<td>City 17</td>
+<td>New town</td>
 
-
+<td>Park Street, Kolkata, 700001</td>
 </tr>
 <tr>
   <td>18</td>
-  <td>Lucas Mitchell</td>
-            <td>lucas.mitchell@example.com</td>
-            <td>+1-152-456-7894</td>
+<td>155555</td>
+<td>Rajnandgaon</td>
+<td>Old town</td>
 
-
+<td>Park Street, Kolkata, 700001</td>
 </tr>
 <tr>
   <td>19</td>
-  <td>Ella Perez</td>
-  <td>ella.perez@example.com</td>
-  <td>+1-162-456-7895</td>
+<td>462043</td>
+<td>Odisha</td>
+<td>Durga square</td>
 
-
+<td>Park Street, Kolkata, 700001</td>
 </tr>
 <tr>
 <td>20</td>
-<td>Henry Roberts</td>
-<td>henry.roberts@example.com</td>
-<td>+1-172-456-7896</td>
+<td>12854</td>
+<td>Puri</td>
+<td>Jagannath temple</td>
+<td>Jagannath temple,puri,12854</td>
 </tr>
         
     
